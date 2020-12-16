@@ -2,37 +2,172 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+  margin: 0 auto;
+  padding: 2px;
+  font-family: Comic Sans MS;
+  justify-content: space-around;
+  box-sizing: border-box;
+  max-width: 900px;
+  text-align: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  body{
+     /* background : rgba(137, 182, 54, 0.692);  */
+     background : rgba(233, 210, 183, 0.692); 
+  
   }
-  to {
-    transform: rotate(360deg);
+  a{
+      text-decoration: none;
+      /* color: rgb(1, 2, 1); */
+      color: whitesmoke;
   }
-}
+  
+  .navbar{
+      /* background-color: green; */
+      background-color: rgb(230, 125, 6);
+      display: flex;
+      align-items: center;
+      max-width : 800px;
+  }
+  
+  .navbar ul {
+      flex: 1;
+      font-size: 30px;
+      text-align: right;
+      padding: 5px;
+      margin-bottom: 0%;
+  }
+  .navbar ul li {
+      display: inline-block;
+      margin: 40px 5px 5px 5px;
+      font-size: 15px;
+      align-items: center;
+  }
+  .logo{
+  
+      font-size: 40px;
+      /* color: rgb(1, 2, 1); */
+      color: whitesmoke;
+  }
+  .mobile-list{
+      display: none;
+  }
+  @media only screen and (max-width: 800px){
+      .navbar .desktop-list {
+          display: none;
+      }
+      .mobile-list{
+          background-color: rgb(230, 125, 6);
+          font-size: 20px;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+          z-index: 100;
+      }
+      .mobile-list i{
+          font-size: 7vmin;
+          color: whitesmoke;
+          cursor: pointer;
+      }
+  
+      .mobile-list li:hover i{
+          color: rgb(220, 230, 220);;
+      }
+  }
+  .button{
+      position: relative;
+      background: green;
+      color : yellow;
+  }
+  
+  .image_section,.description_section{ 
+      position: relative; 
+      text-align: center;
+     max-width : 800px;
+  }
+  .AppImage{
+  
+      width: 100%;
+  }
+  /* Top right text */
+  .image_section--top-right {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  
+  .activity_section ,.mentoring_section {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex : 1 1 auto;
+      max-width: 800px;
+      
+  }
+  
+  .img{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: fixed;
+      z-index: 1;
+      height: 150px;
+  }
+  .activity-online-img{
+      background-image: url(https://cdn.elearningindustry.com/wp-content/uploads/2017/01/social-learning-activities-perfect-fit-online-training.jpg);
+    
+  }
+  .activity-premise-img{
+      background-image: url(https://thumbs.dreamstime.com/z/rock-band-instruments-18172472.jpg);
+  
+  }
+  .mentor-online-img{
+      background-image: url(https://www.mentoring.org/wp-content/uploads/2020/05/Untitled-1-09.png);
+     
+  }
+  .mentor-premise-img{
+      background-image: url(https://thumbs.dreamstime.com/b/mentoring-happy-young-teacher-group-kids-studio-arts-89905161.jpg);
+  
+  }
+  .activity-text {
+      position: relative;
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+  }
+  .img-text {
+      position: relative;
+      font-size:10px;
+      text-align: center;
+  }
+  
+  /* Activity Search Section */
+  .online-dance-img{
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHJcXUdS7y0M4dyPDQoQr3TZCaEU9roFUj6w&usqp=CAU);
+      position: relative; 
+      text-align: center;
+      max-width : 800px;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .online-art-img{
+      background-image: url(https://curiosityencouraged.com/wp-content/uploads/2018/04/homeschool-art3.jpg);
+  
+  }
+  .premise-drummer-img{
+      background-image: url(https://fonzibadrums.com/images/home1.jpg);
+     
+  }
+  .premise-cooking-img{
+      background-image: url(http://ggevd.com/wp-content/uploads/2019/03/cooking-classes-for-kids-c700x420-QdPwiJ.jpg);
+  
+  }
+  
+  
