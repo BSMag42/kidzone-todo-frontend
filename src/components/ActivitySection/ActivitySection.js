@@ -14,7 +14,7 @@ function ActivitySection(props) {
                {props.category === 'premise' && props.type === 'activity' && <h4>Premise Activities</h4>}
                {props.category === 'online' && props.type === 'mentoring' && <h4>Online Mentoring</h4>}
                {props.category === 'premise' && props.type === 'mentoring' && <h4>Premise Mentoring</h4>}
-            <button className="button">View</button>
+            <button className="button btn btn-info">View</button>
             </div>
         </section> 
   );
